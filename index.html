@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">JÄGERMEISTER</a>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Experience</a>
+                <a href="#premium-brand" class="nav-link">The Heritage</a>
+                <a href="#" class="nav-link highlight">Shop</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="scroll-container" id="scroll-container">
+        <div class="sticky-wrapper">
+            <canvas id="animation-canvas"></canvas>
+        </div>
+    </div>
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Born in 1934 in Wolfenbüttel, Germany, Jägermeister has become one of the world’s most iconic herbal
+                liqueurs.
+                Crafted from a closely guarded recipe of 56 carefully selected herbs, roots, fruits, and spices sourced
+                from around the globe,
+                Jägermeister represents a bold balance of tradition, precision, and character.
+                Our story began with Curt Mast, who perfected the recipe and named it “Jägermeister,”
+                meaning “Master Hunter.” Inspired by nature and craftsmanship, the brand’s legendary stag logo pays
+                tribute to Saint Hubertus,
+                the patron saint of hunters — a symbol of strength, respect, and authenticity that continues to define
+                us today.
+                Every drop of Jägermeister undergoes a meticulous production process. The natural ingredients are
+                ground, steeped, and matured in
+                oak barrels for up to a year before being carefully filtered and blended. The result is a smooth,
+                complex spirit best served ice-cold at
+                -18°C — a ritual that has become part of our global identity.
+                From underground music scenes to international nightlife, Jägermeister has always stood alongside those
+                who move culture forward.
+                We support creativity, independence, and the spirit of bringing people together.
+                More than just a drink, Jägermeister is a symbol of bold taste, shared moments, and unforgettable
+                nights.
+                Jägermeister. Crafted with character. Enjoy responsibly.</p>
+        </div>
+    </section>
+
+    <section id="services" class="content-section alternate">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Premium Spirit Craftsmanship</h3>
+                    <p>Our iconic herbal liqueur is produced using 56 carefully selected botanicals, matured in oak
+                        barrels,
+                        and perfected through a meticulous blending process. Quality, precision, and heritage define
+                        every drop.</p>
+                </div>
+                <div class="card">
+                    <h3>Global Distribution & Partnerships</h3>
+                    <p>We collaborate with bars, clubs, restaurants, and retail partners worldwide to deliver the
+                        perfect
+                        ice-cold serve experience wherever the night takes you.</p>
+                </div>
+                <div class="card">
+                    <h3>Event & Music Sponsorship</h3>
+                    <p>From underground scenes to major global festivals, we support artists, DJs, and cultural
+                        movements that
+                        push boundaries and inspire communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="countdown-section" class="content-section">
+        <div class="container">
+            <h2>Something Big is Coming</h2>
+            <div id="countdown" class="countdown-container">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="premium-brand" class="premium-section">
+        <div class="premium-container">
+            <span class="premium-label">The Heritage</span>
+            <h2 class="premium-headline">Forged by the Night.<br>Perfected by the Ritual.</h2>
+            <div class="accent-line"></div>
+
+            <div class="premium-card glassmorphism">
+                <div class="badge">Serve at -18°C</div>
+                <p class="premium-subheading">A cinematic journey into the dark forest. Cold night, fire, and ice.</p>
+                <div class="cta-container">
+                    <a href="#" class="premium-cta">Discover the Ritual</a>
+                </div>
+            </div>
+
+            <div class="feature-blocks">
+                <div class="feature-card fade-up">
+                    <div class="icon-line"></div>
+                    <h4>56 Botanicals</h4>
+                    <p>A secret blend of herbs, blossoms, roots, and fruits from around the globe.</p>
+                </div>
+                <div class="feature-card fade-up delay-1">
+                    <div class="icon-line"></div>
+                    <h4>Ice Cold Ritual</h4>
+                    <p>Unleash the full flavor profile by serving at the optimal temperature.</p>
+                </div>
+                <div class="feature-card fade-up delay-2">
+                    <div class="icon-line"></div>
+                    <h4>Since 1878</h4>
+                    <p>Over a century of unwavering dedication to craftsmanship and quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="luxury-footer">
+        <div class="footer-grid container">
+            <div class="footer-col brand-col">
+                <h3 class="footer-logo">JÄGERMEISTER</h3>
+                <p>Crafted with character. A smooth, complex spirit born from 56 botanicals and perfected through
+                    rigorous craftsmanship.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <div class="footer-links-list">
+                    <a href="#about">Our Story</a>
+                    <a href="#services">Experience</a>
+                    <a href="#premium-brand">The Heritage</a>
+                    <a href="#">Shop</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-links-list">
+                    <a href="#">Support Center</a>
+                    <a href="#">Trade Inquiries</a>
+                    <a href="#">Find a Store</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <div class="divider"></div>
+            <div class="bottom-content">
+                <p>&copy; 2026 Mast-Jägermeister SE. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="dot">•</span>
+                    <a href="#">Terms of Use</a>
+                    <span class="dot">•</span>
+                    <a href="#">Drink Responsibly</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
